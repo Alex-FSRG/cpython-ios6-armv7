@@ -31,6 +31,8 @@ Python 3.10.11 (...)
 >>> print("Hello from iPad 2")
 Hello from iPad 2
 >>>
+```
+
 ## Missing modules
 
 The following optional/extension modules are currently unavailable:
