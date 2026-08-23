@@ -41,7 +41,7 @@ Run this command from the root directory fo the cloned repository
 ### Optional: Create a .deb package
 You can optionally package the Python binary and the Lib directory into a .deb package  
 Files from build/lib.darwin-arm-3.10 must be placed in Lib directory  
-Lib folder must be installed to
+Lib directory must be installed to
 ```text
 /usr/local/lib/python3.10
 ```
