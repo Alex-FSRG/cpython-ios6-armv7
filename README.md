@@ -85,7 +85,7 @@ Many Python packages will require additional work because:
 
 ## Install  
 
-You can install this port from Cydia repo https://alex-fsrg.github.io/repo, install .deb file from releases, or build it from Sorce
+You can install this port from Cydia repo https://alex-fsrg.github.io/repo, install .deb file from releases, or build it from Source
 
 ## Building from Source
 
