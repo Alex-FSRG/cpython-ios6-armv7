@@ -13,7 +13,7 @@ sudo nano /etc/paths
 Type:
 ```text
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib
 ```
 Save file.
 ### Step 2. Configure  
@@ -38,5 +38,10 @@ Run this command from the root directory fo the cloned repository.
 ldid -S python.exe
 ```
 Run this command from the root directory fo the cloned repository  
-## Optinally you can pack binary and Lib folder to .deb file
-Lib folder must be in /usr/local/lib and named python3.10
+### Optional: Create a .deb package
+You can optionally package the Python binary and the Lib directory into a .deb package  
+Files from build/lib.darwin-arm-3.10 must be placed in Lib directory  
+Lib folder must be installed to
+```text
+/usr/local/lib/python3.10
+```
