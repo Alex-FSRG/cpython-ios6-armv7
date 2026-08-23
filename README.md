@@ -83,6 +83,10 @@ Many Python packages will require additional work because:
 * the available compiler and SDK are significantly older than those
     normally used to build CPython 3.10.
 
+## Building
+
+See [build.md](build.md)
+
 ## Contributing
 
 If you manage to port additional modules or Python packages to iOS 6 /
