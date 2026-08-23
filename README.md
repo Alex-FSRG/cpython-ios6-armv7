@@ -1,4 +1,4 @@
-# CPython 3.10 for iOS 6 / ARMv7
+# CPython 3.10.11 for iOS 6 / ARMv7
 
 Unofficial port of CPython 3.10.11 to iOS 6 ARMv7 devices.
 
