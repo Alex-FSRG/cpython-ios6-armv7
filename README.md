@@ -1,6 +1,6 @@
 # CPython 3.10.11 for iOS 6 / ARMv7
 
-Unofficial port of CPython 3.10.11 to iOS 6 ARMv7 devices.
+Unofficial, experimental port of CPython 3.10.11 to iOS 6 ARMv7 devices.
 
 This project provides a native Python 3.10.11 interpreter for legacy
 jailbroken iOS devices, including devices such as the iPad 2.
