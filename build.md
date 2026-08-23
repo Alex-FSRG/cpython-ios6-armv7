@@ -27,7 +27,7 @@ Run
 ```text
 sed -i '' 's/^#define HAVE_SENDFILE 1$/\/\* #undef HAVE_SENDFILE \*\//' pyconfig.h
 ```
-in main folder of cloned repo.
+in main folder of cloned repo. /n
 Step 4. Build
 Run
 ```text
