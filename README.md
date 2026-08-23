@@ -3,7 +3,7 @@
 Unofficial, experimental port of CPython 3.10.11 to iOS 6 ARMv7 devices.
 
 This project provides a native Python 3.10.11 interpreter for legacy
-jailbroken iOS devices
+jailbroken iOS devices.
 
 ## What is this?
 
