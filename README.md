@@ -83,7 +83,7 @@ Many Python packages will require additional work because:
 * the available compiler and SDK are significantly older than those
     normally used to build CPython 3.10.
 
-## Building
+## Building from Source
 
 See [build.md](build.md)
 
