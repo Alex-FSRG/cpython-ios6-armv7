@@ -83,6 +83,10 @@ Many Python packages will require additional work because:
 * the available compiler and SDK are significantly older than those
     normally used to build CPython 3.10.
 
+## Install  
+
+You can install this port from Cydia repo https://alex-fsrg.github.io/repo, install .deb file from releases, or build it from Sorce
+
 ## Building from Source
 
 See [build.md](build.md)
