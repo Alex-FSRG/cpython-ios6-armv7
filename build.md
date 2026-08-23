@@ -21,19 +21,19 @@ Run
  CONFIG_SITE="$PWD/ios-config.site" READELF=true ./configure --host=arm-apple-darwin --build=x86_64-apple-darwin --disable-ipv6 CC="/usr/bin/clang" CPP="/usr/bin/clang -E" CXX="/usr/bin/clang++" CFLAGS="-arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -miphoneos-version-min=6.0" CPPFLAGS="-arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk" LDFLAGS="-arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -miphoneos-version-min=6.0"
 
 ```
-in main folder of cloned repo.
+in main folder of cloned repo.  
 Step 3. Disable HAVE_SENDFILE
 Run
 ```text
 sed -i '' 's/^#define HAVE_SENDFILE 1$/\/\* #undef HAVE_SENDFILE \*\//' pyconfig.h
 ```
-in main folder of cloned repo. /n
+in main folder of cloned repo.  
 Step 4. Build
 Run
 ```text
 make
 ```
-in main folder of cloned repo.
+in main folder of cloned repo.  
 Step 5. Sign binary using ldid
 Run
 ``` text
