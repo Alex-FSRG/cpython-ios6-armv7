@@ -50,7 +50,7 @@ to
 ``` python
 if sys.platform == '':
 ```
-### Step 6. Sign the binary using ldid  
+### Step 7. Sign the binary using ldid  
 ``` sh
 ldid -S python.exe
 ```
