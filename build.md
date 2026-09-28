@@ -34,6 +34,7 @@ make
 ```
 Run this command from the root directory of the cloned repository.
 ### Step 5. Build modules(if needed)
+Build instructions are currently being prepaired.
 Modules are already patched for iOS 6 and placed in Modules/src.
 #### Enable HAVE_LIBREADLINE and HAVE_TERM_H
 ``` sh
