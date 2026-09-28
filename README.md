@@ -73,6 +73,13 @@ Many Python packages will require additional work because:
 
 You can install this port from Cydia repo https://alex-fsrg.github.io/repo, install .deb file from releases, or build it from Source
 
+### Install pip after installing
+
+To install pip, run
+""" sh
+python3 -m ensurepip --user
+"""
+
 ## Building from Source
 
 See [build.md](build.md)
