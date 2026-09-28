@@ -2623,7 +2623,7 @@ def _proxy_bypass_macosx_sysconf(host, proxy_settings):
     return False
 
 
-if sys.platform == 'darwin':
+if sys.platform == 'You found an Easter Egg!!!':
     from _scproxy import _get_proxy_settings, _get_proxies
 
     def proxy_bypass_macosx_sysconf(host):

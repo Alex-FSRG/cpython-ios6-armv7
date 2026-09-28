@@ -62,6 +62,36 @@ typedef struct _Py_atomic_int {
 #define _Py_atomic_load_explicit(ATOMIC_VAL, ORDER) \
     atomic_load_explicit(&((ATOMIC_VAL)->_value), ORDER)
 
+#elif defined(__arm__) && defined(__APPLE__) && !defined(__aarch64__)
+
+typedef enum _Py_memory_order {
+    _Py_memory_order_relaxed,
+    _Py_memory_order_acquire,
+    _Py_memory_order_release,
+    _Py_memory_order_acq_rel,
+    _Py_memory_order_seq_cst
+} _Py_memory_order;
+
+typedef struct _Py_atomic_address {
+    volatile uintptr_t _value;
+} _Py_atomic_address;
+
+typedef struct _Py_atomic_int {
+    volatile int _value;
+} _Py_atomic_int;
+
+#define _Py_atomic_signal_fence(/*memory_order*/ ORDER) \
+    __asm__ volatile("" ::: "memory")
+
+#define _Py_atomic_thread_fence(/*memory_order*/ ORDER) \
+    __asm__ volatile("" ::: "memory")
+
+#define _Py_atomic_store_explicit(ATOMIC_VAL, NEW_VAL, ORDER) \
+    ((ATOMIC_VAL)->_value = (NEW_VAL))
+
+#define _Py_atomic_load_explicit(ATOMIC_VAL, ORDER) \
+    ((ATOMIC_VAL)->_value)
+
 // Use builtin atomic operations in GCC >= 4.7 and clang
 #elif defined(HAVE_BUILTIN_ATOMIC)
 
