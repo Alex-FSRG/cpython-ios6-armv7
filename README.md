@@ -76,9 +76,9 @@ You can install this port from Cydia repo https://alex-fsrg.github.io/repo, inst
 ### Install pip after installing
 
 To install pip, run
-""" sh
+``` sh
 python3 -m ensurepip --user
-"""
+```
 
 ## Building from Source
 
