@@ -41,6 +41,15 @@ Modules are already patched for iOS 6 and placed in Modules/src.
 sed -i '' 's@/\* #undef HAVE_LIBREADLINE \*/@#define HAVE_LIBREADLINE 1@' pyconfig.h
 sed -i.bak 's|/\* #undef HAVE_TERM_H \*/|#define HAVE_TERM_H 1|' pyconfig.h
 ```
+### Step 6. Replace 'darwin' to '' to get working Lib/urllib/request.py
+In Lib/urllib/request.py replace string 2626
+``` python
+if sys.platform == 'darwin':
+```
+to
+``` python
+if sys.platform == '':
+```
 ### Step 6. Sign the binary using ldid  
 ``` sh
 ldid -S python.exe
