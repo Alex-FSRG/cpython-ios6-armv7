@@ -32,8 +32,15 @@ Run this command from the root directory of the cloned repository.
 ```sh
 make
 ```
-Run this command from the root directory of the cloned repository.  
-### Step 5. Sign the binary using ldid  
+Run this command from the root directory of the cloned repository.
+### Step 5. Build modules(if needed)
+Modules are already patched for iOS 6
+# Enable HAVE_LIBREADLINE and HAVE_TERM_H
+``` sh
+sed -i '' 's@/\* #undef HAVE_LIBREADLINE \*/@#define HAVE_LIBREADLINE 1@' pyconfig.h
+sed -i.bak 's|/\* #undef HAVE_TERM_H \*/|#define HAVE_TERM_H 1|' pyconfig.h
+```
+### Step 6. Sign the binary using ldid  
 ``` sh
 ldid -S python.exe
 ```
