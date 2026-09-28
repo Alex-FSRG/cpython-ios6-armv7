@@ -1,6 +1,6 @@
 # CPython 3.10.11 for iOS 6 / ARMv7
 
-Unofficial, experimental port of CPython 3.10.11 to iOS 6 ARMv7 devices.
+An unofficial port of CPython 3.10.11 to iOS 6 ARMv7 devices.
 
 This project provides a native Python 3.10.11 interpreter for legacy
 jailbroken iOS devices.
@@ -37,25 +37,10 @@ Hello from iPad 2
 
 The following optional/extension modules are currently unavailable:
 
-* bz2
-* curses
-* curses_panel
-* dbm
-* gdbm
-* hashlib
-* lzma
-* sqlite3
-* ssl
 * nis
 * ossaudiodev
-* readline
 * spwd
-* zlib
-* ctypes
-
-Python signal handling is also currently disabled and replaced with a
-minimal compatibility layer required to build the interpreter for the
-legacy ARMv7/iOS 6 toolchain.
+* tkinter
 
 This means that Python programs depending on these modules may not work
 without additional porting.
@@ -95,17 +80,6 @@ See [build.md](build.md)
 
 If you manage to port additional modules or Python packages to iOS 6 /
 ARMv7, contributions are welcome.
-
-Useful areas for future work include:
-
-* zlib
-* ssl
-* hashlib
-* sqlite3
-* ctypes
-* readline
-* bz2
-* lzma
 
 # Credits
 
