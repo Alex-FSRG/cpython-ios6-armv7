@@ -32,6 +32,7 @@ Python 3.10.11 (...)
 Hello from iPad 2
 >>>
 ```
+pip and basic modules also working.
 
 ## Missing modules
 
